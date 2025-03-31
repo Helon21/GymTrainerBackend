@@ -1,6 +1,6 @@
 spring:
   application:
-    name: api
+    name: GymTrainerApplication
   datasource:
     url: jdbc:postgresql://localhost:5432/postgres
     username: postgres
@@ -14,6 +14,6 @@ spring:
     create-schemas: true
     default-schema: public
     enabled: true
-    locations: path-to-migrations
+    locations: classpath:db.migration
     schemas: public
     validate-on-migrate: true
